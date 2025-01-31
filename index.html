@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Lab</title>
+    <link rel="shortcut icon" href="./c1-assets/logo-header.png" type="image/x-icon">
+    <!-- Tailwind CSS & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Font ADLaM Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .font-sora{
+            font-family: "Sora", serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+                "btn-bg": '#FFDC26',
+                "card-bg": '#F9DF8A',
+            }
+            }
+        }
+        }
+    </script>
+</head>
+<body class="font-sora">
+    <!-- Header Section -->
+    <header class="">
+        <!-- nav section -->
+        <nav class="bg-[#FFF9F4] border-b border-btn-bg md:border-none mb-10 md:mb-40 md:px-[100px] lg:px-[200px]">
+            <div class="navbar">
+                <div class="navbar-start space-x-3">
+                  <a href=""><img src="./c1-assets/logo-header.png" alt="" class=""></a>
+                  <h1 class="hidden md:inline-flex text-3xl cursor-pointer">Browse <span class="text-btn-bg">4</span> Pets</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-xl">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="hidden md:flex md:items-center md:gap-4">
+                        <i class="fa-regular fa-bell mx-3 cursor-pointer transition ease-in-out hover:scale-150"></i>
+                        <i class="fa-solid fa-magnifying-glass mx-3 cursor-pointer transition ease-in-out hover:scale-150"></i>
+                        <a class="btn border border-btn-bg w-28 hover:bg-btn-bg hover:text-white">Login</a>
+                        <a class="btn bg-btn-bg text-white w-28 hover:text-btn-bg hover:bg-white hover:border-btn-bg">Register</a>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-xl dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-6">
+                          <li><a>Login</a></li>
+                          <li><a>Register</a></li>
+                          <li><a>Find a pet</a></li>
+                          <li><a>Breeds</a></li>
+                          <li><a>Contact us</a></li>
+                        </ul>
+                      </div>
+                </div>
+              </div>
+        </nav>
+
+        <!-- hero section -->
+        <section class="mx-auto ml-2 md:mx-[100px] lg:mx-[200px] space-y-5 mb-10 lg:-mb-52">
+            <h1 class="text-3xl leading-10 md:text-5xl z-10 relative">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
+            <p class="z-10 relative">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+            <a class="btn bg-btn-bg w-28 hover:text-btn-bg hover:bg-white hover:border-btn-bg z-10 relative">Find a pet</a>
+            <div class="z-0">
+                <img src="./c1-assets/cat-big.png" alt="" class="relative lg:-top-96 lg:left-40">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Categories Section -->
+        <section class="mx-auto md:mx-[100px] lg:mx-[200px] mb-20">
+            <h1 class="ml-2 text-2xl md:text-4xl mb-5">Browse By Categories</h1>
+            <div class="mb-12 gap-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 items-center justify-center">
+                <!-- card-1 -->
+                <div class="card bg-card-bg w-44 lg:w-60 pb-9 mx-auto">
+                    <figure class="px-5 pt-5">
+                      <div class="bg-white rounded-full">
+                        <img
+                          src="./c1-assets/dog-cartoon.png"
+                          alt="27/7"
+                          class=" w-50 h-50 p-5" />
+                      </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title mb-2">Dog</h2>
+                      <p>3 Items</p>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="card bg-card-bg w-44 lg:w-60 pb-9 mx-auto">
+                    <figure class="px-5 pt-5">
+                      <div class="bg-white rounded-full">
+                        <img
+                          src="./c1-assets/dog-cartoon.png"
+                          alt="27/7"
+                          class=" w-50 h-50 p-5" />
+                      </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title mb-2">Dog</h2>
+                      <p>3 Items</p>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="card bg-card-bg w-44 lg:w-60 pb-9 mx-auto">
+                    <figure class="px-5 pt-5">
+                      <div class="bg-white rounded-full">
+                        <img
+                          src="./c1-assets/dog-cartoon.png"
+                          alt="27/7"
+                          class=" w-50 h-50 p-5" />
+                      </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title mb-2">Dog</h2>
+                      <p>3 Items</p>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class="card bg-card-bg w-44 lg:w-60 pb-9 mx-auto">
+                    <figure class="px-5 pt-5">
+                      <div class="bg-white rounded-full">
+                        <img
+                          src="./c1-assets/dog-cartoon.png"
+                          alt="27/7"
+                          class=" w-50 h-50 p-5" />
+                      </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title mb-2">Dog</h2>
+                      <p>3 Items</p>
+                    </div>
+                </div>
+                <!-- card-5 -->
+                <div class="card bg-card-bg w-44 lg:w-60 pb-9 mx-auto">
+                    <figure class="px-5 pt-5">
+                      <div class="bg-white rounded-full">
+                        <img
+                          src="./c1-assets/dog-cartoon.png"
+                          alt="27/7"
+                          class=" w-50 h-50 p-5" />
+                      </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title mb-2">Dog</h2>
+                      <p>3 Items</p>
+                    </div>
+                </div>
+                <!-- card-6 -->
+                <div class="card bg-card-bg w-44 lg:w-60 pb-9 mx-auto">
+                    <figure class="px-5 pt-5">
+                      <div class="bg-white rounded-full">
+                        <img
+                          src="./c1-assets/dog-cartoon.png"
+                          alt="27/7"
+                          class=" w-50 h-50 p-5" />
+                      </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title mb-2">Dog</h2>
+                      <p>3 Items</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section></section>
+
+        <!-- Low Price Section -->
+        <section></section>
+
+        <!-- Subscribe -->
+        <section></section>
+
+        <!-- Footer -->
+        <footer></footer>
+    </main>
+</body>
+</html>
